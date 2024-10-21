@@ -1,0 +1,45 @@
+// A simple Qvin program for basic math operations
+
+// Function to add two numbers
+func add(a: int, b: int) -> int {
+    return a + b;
+}
+
+// Function to subtract two numbers
+func subtract(a: int, b: int) -> int {
+    return a - b;
+}
+
+// Function to multiply two numbers
+func multiply(a: int, b: int) -> int {
+    return a * b;
+}
+
+// Function to divide two numbers
+func divide(a: int, b: int) -> float {
+    if (b == 0) {
+        throw "Cannot divide by zero.";
+    }
+    return a / b;
+}
+
+// Main function to test the basic math operations
+func main() {
+    let num1: int = 10;
+    let num2: int = 5;
+
+    // Perform operations
+    let sum: int = add(num1, num2);
+    let difference: int = subtract(num1, num2);
+    let product: int = multiply(num1, num2);
+    let quotient: float = divide(num1, num2);
+
+    // Print results
+    print("Addition: ", sum);
+    print("Subtraction: ", difference);
+    print("Multiplication: ", product);
+    print("Division: ", quotient);
+}
+
+// Start the program
+main();
